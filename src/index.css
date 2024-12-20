@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.main {
+  /* margin: 0 24px; */
+  padding: 0 56px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+}
+
+.card-content {
+  color: #6f7cb2;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  color: #505f98;
+  line-height: 24px;
+}
+
+.heading {
+  color: #37447e;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+  font-family: "roboto";
+  font-weight: 900;
+}
+
+.nav-button {
+  background-color: #37447e;
+  color: white;
+  padding: 8px 50px;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}
+
+.img-hero {
+  background-color: #e7ecff;
+}
+
+.hero {
+  display: flex;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.inner-card {
+  display: flex;
+  gap: 112px;
+}
+
+.card-images {
+  width: 540px;
+  height: 450px;
+}
+
+.child-heading {
+  color: #091133;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.icon {
+  color: #000000;
+  font-size: 30px;
+  width: 28px;
+  height: 28px;
+}
+
+.button {
+  padding: 12px 24px;
+  color: white;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.row {
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .nav-list {
+    display: none;
+  }
+  .navbar {
+    padding: 12px;
+  }
+  .main {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-button {
+    padding: 6px 14px;
+  }
+  .main {
+    padding: 0 6px;
+  }
+  .inner-card {
+    gap: 20px;
+  }
+  .card-images {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 980px) {
+  .cards {
+    flex-direction: column;
+    gap: 72px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    /* flex-direction: column; */
+    gap: 72px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inner-card {
+    flex-direction: column;
+  }
+  .card-images {
+    height: 200px;
+  }
+}
